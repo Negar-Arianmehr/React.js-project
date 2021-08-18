@@ -39,6 +39,9 @@ Whereas elements starting with an uppercase character are element defines by you
 #Passing Data via "Props" :
 We can pass data to the custom component by adding a attribute. And inside of that component, we can then get access to all these attributes which might have been set on our custom component. Again, we're basically building our own custom HTML elements. And just as HTML elements can have attributes, it turns out that with React, our own custom components can also have attributes.There, this concept is just called props instead of attributes. And **props simply stands for properties**. We can set properties of our own custom components. Props are really important, because it allows you to make your components reusable, and it allows you to pass data from another component to this component.
 
+#composition
+We build all these components to then build a user interface and we are already doing that. In App.js we're using Expenses, in there we are using ExpenseItem, in there we're using ExpenseDate. Generally, this approach of building a user interface from smaller building blocks is called composition. What if we wanted to create a component which actually just serves as a shell around any kind of other content.
+When you use custom componenrs as wrapers, you can not see the content. But we want to use a reusable wraper so we put in wraper div a **{props.children}**. Children is a reserved name. and the value of this special children prop will always be the content between the opening and closing tags of your custom component. This property is now a custom component defined by you. now we have this reusable wrapper component.
 
  
 
