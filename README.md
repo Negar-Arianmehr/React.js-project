@@ -36,6 +36,8 @@ We got a JSX code that is basically HTML code inside of JS. Indeed, JSX stands d
 #Building Components
 We build a component file and give it a name and add a function in it with JSX syntax. When we want to add it to main App.js we import it and write it as a element in the JSX. this is a customer component and we have to use the name which we use in import as a name for element. Because that is how conection is established.
 Whereas elements starting with an uppercase character are element defines by you or some other developer<ExpenseItem />.
+#Passing Data via "Props" :
+We can pass data to the custom component by adding a attribute. And inside of that component, we can then get access to all these attributes which might have been set on our custom component. Again, we're basically building our own custom HTML elements. And just as HTML elements can have attributes, it turns out that with React, our own custom components can also have attributes.There, this concept is just called props instead of attributes. And **props simply stands for properties**. We can set properties of our own custom components. Props are really important, because it allows you to make your components reusable, and it allows you to pass data from another component to this component.
 
 
  
